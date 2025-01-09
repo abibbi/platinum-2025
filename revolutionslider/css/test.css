@@ -1,0 +1,83 @@
+/* CSS Document */
+
+
+
+.btn-new {
+	background: #065e2c;
+    padding: 10px;
+    border: none;
+    font-weight: bold;
+    border-radius: 0;
+    color: white;
+}
+.btn-new:hover {
+	background: #b11f23;
+	color: white!important;
+}
+
+
+.caption.text.sfb.tp-caption h2 {
+   	font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    color: #fff;
+	line-height: normal;
+	font-size: 3vw;
+}
+
+.caption.text.sfb.tp-caption p {
+    color: #fff;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+	line-height: normal;
+}
+
+
+
+@media only screen and (max-width: 1580px) {
+	.caption.text.sfb.tp-caption.start {
+		
+	}
+}
+
+
+@media only screen and (max-width: 1201px) {
+	.caption.text.sfb.tp-caption.start {
+   
+}
+}
+
+
+@media only screen and (max-width: 1150px) {
+	.caption.text.sfb.tp-caption.start {
+		
+	}
+}
+
+@media only screen and (max-width: 980px) {
+	.caption.text.sfb.tp-caption.start {
+		
+	}
+	
+}
+@media (max-width: 1200px) and (min-width: 978px){
+	
+	.caption.text a.btn {
+    font-size: 12px !important;
+}
+}
+
+
+
+@media only screen and (max-width: 767px) {
+	
+	.caption.text.sfb.tp-caption.start h2 {
+   
+}
+	.caption.text.sfb.tp-caption.start p {
+    font-size: 1.8vw;
+}
+	.caption.text a.btn {
+		position: relative;
+		
+	}
+}

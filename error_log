@@ -1,0 +1,35 @@
+[08-Sep-2021 20:06:06 UTC] PHP Warning:  include(/home/das41xoexl8y/public_html/hb.html): failed to open stream: No such file or directory in /home/das41xoexl8y/public_html/index20.php on line 18
+[08-Sep-2021 20:06:06 UTC] PHP Warning:  include(): Failed opening '/home/das41xoexl8y/public_html/hb.html' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/das41xoexl8y/public_html/index20.php on line 18
+[08-Sep-2021 20:06:06 UTC] PHP Warning:  include(/home/das41xoexl8y/public_html/quicklinks.html): failed to open stream: No such file or directory in /home/das41xoexl8y/public_html/index20.php on line 19
+[08-Sep-2021 20:06:06 UTC] PHP Warning:  include(): Failed opening '/home/das41xoexl8y/public_html/quicklinks.html' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/das41xoexl8y/public_html/index20.php on line 19
+[08-Sep-2021 20:06:06 UTC] PHP Warning:  include(/home/das41xoexl8y/public_html/nav.html): failed to open stream: No such file or directory in /home/das41xoexl8y/public_html/index20.php on line 22
+[08-Sep-2021 20:06:06 UTC] PHP Warning:  include(): Failed opening '/home/das41xoexl8y/public_html/nav.html' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/das41xoexl8y/public_html/index20.php on line 22
+[08-Sep-2021 20:06:06 UTC] PHP Warning:  include(/home/das41xoexl8y/public_html/footer1.html): failed to open stream: No such file or directory in /home/das41xoexl8y/public_html/index20.php on line 39
+[08-Sep-2021 20:06:06 UTC] PHP Warning:  include(): Failed opening '/home/das41xoexl8y/public_html/footer1.html' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/das41xoexl8y/public_html/index20.php on line 39
+[08-Sep-2021 20:06:06 UTC] PHP Warning:  include(/home/das41xoexl8y/public_html/footer2.html): failed to open stream: No such file or directory in /home/das41xoexl8y/public_html/index20.php on line 40
+[08-Sep-2021 20:06:06 UTC] PHP Warning:  include(): Failed opening '/home/das41xoexl8y/public_html/footer2.html' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/das41xoexl8y/public_html/index20.php on line 40
+[08-Sep-2021 20:06:19 UTC] PHP Warning:  include(/home/das41xoexl8y/public_html/hb.html): failed to open stream: No such file or directory in /home/das41xoexl8y/public_html/index20.php on line 18
+[08-Sep-2021 20:06:19 UTC] PHP Warning:  include(): Failed opening '/home/das41xoexl8y/public_html/hb.html' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/das41xoexl8y/public_html/index20.php on line 18
+[08-Sep-2021 20:06:19 UTC] PHP Warning:  include(/home/das41xoexl8y/public_html/quicklinks.html): failed to open stream: No such file or directory in /home/das41xoexl8y/public_html/index20.php on line 19
+[08-Sep-2021 20:06:19 UTC] PHP Warning:  include(): Failed opening '/home/das41xoexl8y/public_html/quicklinks.html' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/das41xoexl8y/public_html/index20.php on line 19
+[08-Sep-2021 20:06:19 UTC] PHP Warning:  include(/home/das41xoexl8y/public_html/nav.html): failed to open stream: No such file or directory in /home/das41xoexl8y/public_html/index20.php on line 22
+[08-Sep-2021 20:06:19 UTC] PHP Warning:  include(): Failed opening '/home/das41xoexl8y/public_html/nav.html' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/das41xoexl8y/public_html/index20.php on line 22
+[08-Sep-2021 20:06:19 UTC] PHP Warning:  include(/home/das41xoexl8y/public_html/footer1.html): failed to open stream: No such file or directory in /home/das41xoexl8y/public_html/index20.php on line 39
+[08-Sep-2021 20:06:19 UTC] PHP Warning:  include(): Failed opening '/home/das41xoexl8y/public_html/footer1.html' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/das41xoexl8y/public_html/index20.php on line 39
+[08-Sep-2021 20:06:19 UTC] PHP Warning:  include(/home/das41xoexl8y/public_html/footer2.html): failed to open stream: No such file or directory in /home/das41xoexl8y/public_html/index20.php on line 40
+[08-Sep-2021 20:06:19 UTC] PHP Warning:  include(): Failed opening '/home/das41xoexl8y/public_html/footer2.html' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/das41xoexl8y/public_html/index20.php on line 40
+[20-Oct-2021 01:20:10 UTC] Unhandled exception in file cloner/websocket.php line 160: [ws_closed]: Connection closed
+[27-Oct-2021 00:55:19 UTC] Unhandled exception in file cloner/websocket.php line 160: [ws_closed]: Connection closed
+[03-Nov-2021 00:53:28 UTC] Unhandled exception in file cloner/websocket.php line 160: [ws_closed]: Connection closed
+[10-Nov-2021 00:53:13 UTC] Unhandled exception in file cloner/websocket.php line 160: [ws_closed]: Connection closed
+[17-Nov-2021 00:52:47 UTC] Unhandled exception in file cloner/websocket.php line 160: [ws_closed]: Connection closed
+[02-Sep-2022 15:42:48 UTC] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 8388608 bytes) in /home/das41xoexl8y/public_html/sucuri-cleanup.php(2) : eval()'d code on line 24744
+[02-Sep-2022 15:42:49 UTC] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 8388608 bytes) in /home/das41xoexl8y/public_html/sucuri-cleanup.php(2) : eval()'d code on line 24744
+[02-Sep-2022 15:42:49 UTC] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 8388608 bytes) in /home/das41xoexl8y/public_html/sucuri-cleanup.php(2) : eval()'d code on line 24744
+[02-Sep-2022 15:42:50 UTC] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 8388608 bytes) in /home/das41xoexl8y/public_html/sucuri-cleanup.php(2) : eval()'d code on line 24744
+[02-Sep-2022 15:43:22 UTC] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 8388608 bytes) in /home/das41xoexl8y/public_html/sucuri-cleanup.php(2) : eval()'d code on line 24744
+[02-Sep-2022 15:43:23 UTC] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 8388608 bytes) in /home/das41xoexl8y/public_html/sucuri-cleanup.php(2) : eval()'d code on line 24744
+[02-Sep-2022 15:43:24 UTC] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 8388608 bytes) in /home/das41xoexl8y/public_html/sucuri-cleanup.php(2) : eval()'d code on line 24744
+[02-Sep-2022 15:43:30 UTC] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 8388608 bytes) in /home/das41xoexl8y/public_html/sucuri-cleanup.php(2) : eval()'d code on line 24744
+[02-Sep-2022 15:44:30 UTC] PHP Parse error:  syntax error, unexpected 'to' (T_STRING) in /home/das41xoexl8y/public_html/sucuri-cleanup.php on line 3
+[02-Sep-2022 15:44:42 UTC] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 8388608 bytes) in /home/das41xoexl8y/public_html/sucuri-cleanup.php(3) : eval()'d code on line 24744

@@ -1,0 +1,293 @@
+<html lang="en">
+  <head>
+    <title>InternetActive Calculators: Retirement Calculator</title>
+    <!--InternetActive Calculators�-->
+    <!--Version 2.0-->
+    <!--Copyright � 1998 - 2001 Desert Cactus Software Corporation-->
+
+    <script language="JavaScript" src="style.js"></script>
+
+    <script language="JavaScript" src="rcv.js"></script>
+  </head>
+
+  <body
+    bgcolor="#FFFFFF"
+    text="#000000"
+    link="#000099"
+    vlink="#9999FF"
+    alink="#CC0000"
+    leftmargin="0"
+    topmargin="0"
+    marginwidth="0"
+    marginheight="0"
+  >
+    <table role="presentation" width="500">
+      <tr>
+        <td>
+          <center></center>
+          <form action="rcr.html">
+            <center>
+              <table role="presentation" border="1" cellpadding="7">
+                <tr>
+                  <td colspan="2" bgcolor="#FFFFEE">
+                    <center>
+                      <span class="FontTwo"
+                        ><strong>InternetActive Calculators�</strong>
+                      </span>
+                      <br />
+                      <span class="FontThree">
+                        <strong>Retirement Calculator</strong></span
+                      >
+                    </center>
+                  </td>
+                </tr>
+                <tr></tr>
+                <tr>
+                  <td colspan="2" bgcolor="#EEEEEE">
+                    <span class="FontFour">
+                      <input
+                        aria-label="Calculate the Annual Income You Will Receive After Retirement"
+                        type="radio"
+                        name="calculate_option"
+                        value="0"
+                        checked
+                      />
+                      <strong
+                        >Calculate the Annual Income You Will Receive
+                        After Retirement</strong
+                      ><br />
+                      (Hint: Enter amounts in the
+                      <u>Beginning Balance</u> and the
+                      <u>Annual Contribution</u> boxes, as well as the
+                      age parameters.)<br />
+                      <br />
+                      <hr />
+                      <input
+                        aria-label="Calculate the Annual Contribution You Must Make Before Retirement"
+                        type="radio"
+                        name="calculate_option"
+                        value="1"
+                      />
+                      <strong
+                        >Calculate the Annual Contribution You Must
+                        Make Before Retirement</strong
+                      ><br />
+                      (Hint: Enter amounts in the
+                      <u>Beginning Balance</u> and the
+                      <u>Annual Income</u> boxes,<br />
+                      as well as the age parameters.)<br />
+                      <br />
+                      <hr />
+                      <input
+                        aria-label="Calculate the Beginning Balance Required in Your Retirement Account"
+                        type="radio"
+                        name="calculate_option"
+                        value="2"
+                      />
+                      <strong
+                        >Calculate the Beginning Balance Required in
+                        Your Retirement Account</strong
+                      ><br />
+                      (Hint: Enter amounts in the
+                      <u>Annual Contribution</u> and the
+                      <u>Annual Income</u> boxes,<br />
+                      as well as the age parameters.)<br />
+                      <br />
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td bgcolor="#EEEEEE">
+                    <span class="FontFour"> Beginning Balance: </span>
+                  </td>
+                  <td bgcolor="#EEFFEE">
+                    <input
+                      aria-label="Enter the amount of money you have in your retirement account"
+                      style="
+                        font-family: Verdana, Arial;
+                        font-size: 8pt;
+                      "
+                      onFocus="select();"
+                      onBlur="checkPR(this.form);"
+                      name="Principal"
+                      value="0"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td bgcolor="#EEEEEE">
+                    <span class="FontFour"> Interest Rate: </span>
+                  </td>
+                  <td bgcolor="#FFEEEE">
+                    <input
+                      aria-label="Enter the interest rate you expect to earn on your retirement account"
+                      style="
+                        font-family: Verdana, Arial;
+                        font-size: 8pt;
+                      "
+                      onFocus="select();"
+                      onBlur="checkIR(this.form);"
+                      name="InterestRate"
+                      value="8"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td bgcolor="#EEEEEE">
+                    <span class="FontFour">
+                      Annual Contribution:
+                    </span>
+                  </td>
+                  <td bgcolor="#EEEEFF">
+                    <input
+                      aria-label="Enter the amount of money you plan to contribute to your retirement account each year"
+                      style="
+                        font-family: Verdana, Arial;
+                        font-size: 8pt;
+                      "
+                      onFocus="select();"
+                      onBlur="checkAC(this.form);"
+                      name="AnnualContribution"
+                      value="0"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td bgcolor="#EEEEEE">
+                    <span class="FontFour"> Annual Income: </span>
+                  </td>
+                  <td bgcolor="#FFEEFF">
+                    <input
+                      aria-label="Enter the amount of money you plan to withdraw from your retirement account each year"
+                      style="
+                        font-family: Verdana, Arial;
+                        font-size: 8pt;
+                      "
+                      onFocus="select();"
+                      onBlur="checkAI(this.form);"
+                      name="AnnualIncome"
+                      value="0"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td bgcolor="#EEEEEE">
+                    <span class="FontFour"> Present Age: </span>
+                  </td>
+                  <td bgcolor="#EEFFEE">
+                    <input
+                      aria-label="Enter your current age"
+                      style="
+                        font-family: Verdana, Arial;
+                        font-size: 8pt;
+                      "
+                      onFocus="select();"
+                      onBlur="checkPresAge(this.form);"
+                      name="PresentAge"
+                      value="35"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td bgcolor="#EEEEEE">
+                    <span class="FontFour"> Retirement Age: </span>
+                  </td>
+                  <td bgcolor="#FFEEEE">
+                    <input
+                      aria-label="Enter the age at which you plan to retire"
+                      style="
+                        font-family: Verdana, Arial;
+                        font-size: 8pt;
+                      "
+                      onFocus="select();"
+                      onBlur="checkRetAge(this.form);"
+                      name="RetirementAge"
+                      value="65"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td bgcolor="#EEEEEE">
+                    <span class="FontFour">
+                      Age At Which Retirement Withdrawals Will End:
+                    </span>
+                  </td>
+                  <td bgcolor="#EEEEFF">
+                    <input
+                      aria-label="Enter the age at which you plan to stop withdrawing money from your retirement account"
+                      style="
+                        font-family: Verdana, Arial;
+                        font-size: 8pt;
+                      "
+                      onFocus="select();"
+                      onBlur="checkWithAge(this.form);"
+                      name="WithdrawalAge"
+                      value="85"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2" bgcolor="#FFFFEE">
+                    <span class="FontFive">
+                      <strong>
+                        <input
+                          aria-label="Show Annual Income in Current Dollars"
+                          type="checkbox"
+                          name="today"
+                          value="1"
+                          checked
+                        />
+                        Show Annual Income in Current Dollars</strong
+                      ><br />
+                      (Hint: Check this box to show the annual income
+                      amount in today's dollars.)<br />
+                      <br />
+                      <hr />
+                      <strong>
+                        <input
+                          aria-label="Adjust for Inflation"
+                          type="checkbox"
+                          name="inflation"
+                          value="0"
+                        />
+                        Adjust for Inflation</strong
+                      ><br />
+                      (Hint: Check this box to account for the effects
+                      of inflation over time.)<br />
+                      <br />
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td bgcolor="#EEEEEE">
+                    <span class="FontFour"> Inflation Rate: </span>
+                  </td>
+                  <td bgcolor="#FFEEFF">
+                    <input
+                      aria-label="Enter the rate of inflation you expect to experience over time"
+                      style="
+                        font-family: Verdana, Arial;
+                        font-size: 8pt;
+                      "
+                      onFocus="select();"
+                      onBlur="checkInf(this.form);"
+                      name="InflationRate"
+                      value="3"
+                    />
+                  </td>
+                </tr>
+              </table>
+              <script language="JavaScript" src="enda.js"></script>
+            </center>
+          </form>
+        </td>
+      </tr>
+    </table>
+
+    <a
+      style="margin-left: 5rem"
+      href="https://www.platinumfcu.org/index.php"
+      >Site Map</a
+    >
+  </body>
+</html>

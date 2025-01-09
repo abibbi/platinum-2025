@@ -1,0 +1,281 @@
+<html lang="en">
+  <head>
+    <title>InternetActive Calculators: Savings Calculator</title>
+    <!--InternetActive Calculators�-->
+    <!--Version 2.0-->
+    <!--Copyright � 1998 - 2001 Desert Cactus Software Corporation-->
+
+    <script language="JavaScript" src="style.js"></script>
+
+    <script language="JavaScript" src="scv.js"></script>
+  </head>
+
+  <body
+    bgcolor="#FFFFFF"
+    text="#000000"
+    link="#000099"
+    vlink="#9999FF"
+    alink="#CC0000"
+    leftmargin="0"
+    topmargin="0"
+    marginwidth="0"
+    marginheight="0"
+  >
+    <table role="presentation" width="500">
+      <tr>
+        <td>
+          <center></center>
+          <form action="scr.html">
+            <center>
+              <table role="presentation" border="1" cellpadding="7">
+                <tr>
+                  <td colspan="2" bgcolor="#FFFFEE">
+                    <center>
+                      <span class="FontTwo"
+                        ><strong>InternetActive Calculators�</strong>
+                      </span>
+                      <br />
+                      <span class="FontThree">
+                        <strong>Savings Calculator</strong></span
+                      >
+                    </center>
+                  </td>
+                </tr>
+                <tr></tr>
+                <tr>
+                  <td colspan="2" bgcolor="#EEEEEE">
+                    <span class="FontFour">
+                      <input
+                        aria-label="Calculate the Ending Balance"
+                        type="radio"
+                        name="calculate_option"
+                        value="0"
+                        checked
+                      />
+                      <strong>Calculate the Ending Balance</strong
+                      ><br />
+                      (Hint: Enter amounts in the
+                      <u>Beginning Balance</u> and
+                      <u>Periodic Contribution</u> boxes.)<br />
+                      <br />
+                      <hr />
+                      <input
+                        aria-label="Calculate the Beginning Balance"
+                        type="radio"
+                        name="calculate_option"
+                        value="1"
+                      />
+                      <strong>Calculate the Beginning Balance</strong
+                      ><br />
+                      (Hint: Enter amounts in the
+                      <u>Periodic Contribution</u> and
+                      <u>Ending Balance</u> boxes.)<br />
+                      <br />
+                      <hr />
+                      <input
+                        aria-label="Calculate the Periodic Contribution"
+                        type="radio"
+                        name="calculate_option"
+                        value="2"
+                      />
+                      <strong
+                        >Calculate the Periodic Contribution</strong
+                      ><br />
+                      (Hint: Enter amounts in the
+                      <u>Beginning Balance</u> and
+                      <u>Ending Balance</u> boxes.)<br />
+                      <br />
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td bgcolor="#EEEEEE">
+                    <span class="FontFour"> Beginning Balance: </span>
+                  </td>
+                  <td bgcolor="#EEFFEE">
+                    <input
+                      aria-label="Beginning Balance"
+                      style="
+                        font-family: Verdana, Arial;
+                        font-size: 8pt;
+                      "
+                      onFocus="select();"
+                      onBlur="checkBB(this.form);"
+                      name="BeginningBalance"
+                      value="0"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td bgcolor="#EEEEEE">
+                    <span class="FontFour"> Interest Rate: </span>
+                  </td>
+                  <td bgcolor="#FFEEEE">
+                    <input
+                      aria-label="Interest Rate"
+                      style="
+                        font-family: Verdana, Arial;
+                        font-size: 8pt;
+                      "
+                      onFocus="select();"
+                      onBlur="checkIR(this.form);"
+                      name="InterestRate"
+                      value="8"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td bgcolor="#EEEEEE">
+                    <span class="FontFour">
+                      Periodic Contribution:
+                    </span>
+                  </td>
+                  <td bgcolor="#EEEEFF">
+                    <input
+                      aria-label="Periodic Contribution"
+                      style="
+                        font-family: Verdana, Arial;
+                        font-size: 8pt;
+                      "
+                      onFocus="select();"
+                      onBlur="checkPC(this.form);"
+                      name="PeriodicContribution"
+                      value="0"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td bgcolor="#EEEEEE">
+                    <span class="FontFour"> Number of Periods: </span>
+                  </td>
+                  <td bgcolor="#FFEEFF">
+                    <input
+                      aria-label="Number of Periods"
+                      style="
+                        font-family: Verdana, Arial;
+                        font-size: 8pt;
+                      "
+                      onFocus="select();"
+                      onBlur="checkNP(this.form);"
+                      name="NumberOfPeriods"
+                      value="0"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td bgcolor="#EEEEEE">
+                    <span class="FontFour"> Ending Balance: </span>
+                  </td>
+                  <td bgcolor="#EEFFEE">
+                    <input
+                      aria-label="Ending Balance"
+                      style="
+                        font-family: Verdana, Arial;
+                        font-size: 8pt;
+                      "
+                      onFocus="select();"
+                      onBlur="checkEB(this.form);"
+                      name="EndingBalance"
+                      value="0"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2" bgcolor="#FFFFEE">
+                    <span class="FontFour">
+                      <input
+                        aria-label="Compound on a Weekly Basis"
+                        type="radio"
+                        name="compound_option"
+                        value="0"
+                      />
+                      Compound on a Weekly Basis<br />
+                      <input
+                        aria-label="Compound on a Monthly Basis"
+                        type="radio"
+                        name="compound_option"
+                        value="1"
+                        checked
+                      />
+                      Compound on a Monthly Basis<br />
+                      <input
+                        aria-label="Compound on a Quarterly Basis"
+                        type="radio"
+                        name="compound_option"
+                        value="2"
+                      />
+                      Compound on a Quarterly Basis<br />
+                      <input
+                        aria-label="Compound on an Annual Basis"
+                        type="radio"
+                        name="compound_option"
+                        value="3"
+                      />
+                      Compound on an Annual Basis<br />
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2" bgcolor="#FFFFEE">
+                    <span class="FontFive">
+                      <strong>
+                        <input
+                          aria-label="Show Ending Balance in Current Dollars"
+                          type="checkbox"
+                          name="today"
+                          value="1"
+                          checked
+                        />
+                        Show Ending Balance in Current Dollars</strong
+                      ><br />
+                      (Hint: Check this box to show the ending balance
+                      in today's dollars.)<br />
+                      <hr />
+                      <strong>
+                        <input
+                          aria-label="Adjust for Inflation"
+                          type="checkbox"
+                          name="inflation"
+                          value="0"
+                        />
+                        Adjust for Inflation</strong
+                      ><br />
+                      (Hint: Check this box to inflate the periodic
+                      contributions.)<br />
+                      <br />
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td bgcolor="#EEEEEE">
+                    <span class="FontFour"> Inflation Rate: </span>
+                  </td>
+                  <td bgcolor="#FFEEEE">
+                    <input
+                      aria-label="Inflation Rate"
+                      style="
+                        font-family: Verdana, Arial;
+                        font-size: 8pt;
+                      "
+                      onFocus="select();"
+                      onBlur="checkInf(this.form);"
+                      name="InflationRate"
+                      value="3"
+                    />
+                  </td>
+                </tr>
+              </table>
+              <script Langugage="JavaScript" src="enda.js"></script>
+            </center>
+          </form>
+        </td>
+      </tr>
+    </table>
+
+    <a
+      style="margin-left: 5rem"
+      href="https://www.platinumfcu.org/index.php"
+      >Site Map</a
+    >
+  </body>
+</html>

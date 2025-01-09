@@ -1,0 +1,242 @@
+<html lang="en">
+  <head>
+    <title>
+      InternetActive Calculators: Compound Interest Calculator
+    </title>
+    <!--InternetActive Calculators�-->
+    <!--Version 2.0-->
+    <!--Copyright � 1998 - 2001 Desert Cactus Software Corporation-->
+
+    <script language="JavaScript" src="style.js"></script>
+
+    <script language="JavaScript" src="cicv.js"></script>
+  </head>
+
+  <body
+    bgcolor="#FFFFFF"
+    text="#000000"
+    link="#000099"
+    vlink="#9999FF"
+    alink="#CC0000"
+    leftmargin="0"
+    topmargin="0"
+    marginwidth="0"
+    marginheight="0"
+  >
+    <table role="presentation" width="500">
+      <tr>
+        <td>
+          <center></center>
+          <form action="cicr.html">
+            <center>
+              <table role="presentation" border="1" cellpadding="7">
+                <tr>
+                  <td colspan="2" bgcolor="#FFFFEE">
+                    <center>
+                      <span class="FontTwo"
+                        ><strong>InternetActive Calculators�</strong>
+                      </span>
+                      <br />
+                      <span class="FontThree">
+                        <strong
+                          >Compound Interest Calculator</strong
+                        ></span
+                      >
+                    </center>
+                  </td>
+                </tr>
+                <tr></tr>
+                <tr>
+                  <td colspan="2" bgcolor="#EEEEEE">
+                    <span class="FontFour">
+                      <input
+                        aria-label="calculate option"
+                        type="radio"
+                        name="calculate_option"
+                        value="0"
+                        checked
+                      />
+                      <strong>Calculate the Compounded Amount</strong
+                      ><br />
+                      (Hint: Enter the <u>opening balance</u> in the
+                      "Principal" box below<br />
+                      to calculate what the compounded amount will
+                      be.)<br />
+                      <br />
+                      <hr />
+                      <input
+                        aria-label="calculate option value 1"
+                        type="radio"
+                        name="calculate_option"
+                        value="1"
+                      />
+                      <strong>Calculate the Opening Balance</strong
+                      ><br />
+                      (Hint: Enter the <u>compounded amount</u> in the
+                      "Principal" box below<br />
+                      to calculate the opening balance you need to
+                      obtain your goal.)<br />
+                      <br />
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2" bgcolor="#EEEEEE">
+                    <span class="FontFour">
+                      <input
+                        aria-label="year option"
+                        type="radio"
+                        name="year_option"
+                        value="0"
+                      />
+                      Base Calculations on a 360-Day Year<br />
+                      <input
+                        aria-label="year option value 1"
+                        type="radio"
+                        name="year_option"
+                        value="1"
+                        checked
+                      />
+                      Base Calculations on a 365-Day Year<br />
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td bgcolor="#EEEEEE">
+                    <span class="FontFour"> Principal: </span>
+                  </td>
+                  <td bgcolor="#EEFFEE">
+                    <input
+                      aria-label="principal"
+                      style="
+                        font-family: Verdana, Arial;
+                        font-size: 8pt;
+                      "
+                      type="text"
+                      onFocus="select();"
+                      onBlur="checkPR(this.form);"
+                      name="Principal"
+                      value="10000"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td bgcolor="#EEEEEE">
+                    <span class="FontFour">
+                      Nominal Interest Rate:
+                    </span>
+                  </td>
+                  <td bgcolor="#FFEEEE">
+                    <input
+                      aria-label="interest rate"
+                      style="
+                        font-family: Verdana, Arial;
+                        font-size: 8pt;
+                      "
+                      type="text"
+                      onFocus="select();"
+                      onBlur="checkIR(this.form);"
+                      name="InterestRate"
+                      value="8"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td bgcolor="#EEEEEE">
+                    <span class="FontFour">
+                      Total Number of Days:
+                    </span>
+                  </td>
+                  <td bgcolor="#EEEEFF">
+                    <input
+                      aria-label="number of days"
+                      style="
+                        font-family: Verdana, Arial;
+                        font-size: 8pt;
+                      "
+                      type="text"
+                      onFocus="select();"
+                      onBlur="checkNP(this.form);"
+                      name="NumberOfPeriods"
+                      value="90"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2" bgcolor="#FFFFEE">
+                    <span class="FontFive">
+                      <input
+                        aria-label="calculate button"
+                        type="radio"
+                        name="compound_option"
+                        value="0"
+                      />
+                      Compound on a Daily Basis<br />
+                      <input
+                        aria-label="calculate button value 1"
+                        type="radio"
+                        name="compound_option"
+                        value="1"
+                      />
+                      Compound on a Weekly Basis<br />
+                      <input
+                        aria-label="calculate button value 2"
+                        type="radio"
+                        name="compound_option"
+                        value="2"
+                      />
+                      Compound on a Bi-Weekly Basis<br />
+                      <input
+                        aria-label="calculate button value 3"
+                        type="radio"
+                        name="compound_option"
+                        value="3"
+                      />
+                      Compound on a Semi-Monthly Basis<br />
+                      <input
+                        aria-label="calculate button value 4"
+                        type="radio"
+                        name="compound_option"
+                        value="4"
+                        checked
+                      />
+                      Compound on a Monthly Basis<br />
+                      <input
+                        aria-label="calculate button value 5"
+                        type="radio"
+                        name="compound_option"
+                        value="5"
+                      />
+                      Compound on a Quarterly Basis<br />
+                      <input
+                        aria-label="calculate button value 6"
+                        type="radio"
+                        name="compound_option"
+                        value="6"
+                      />
+                      Compound on a Semi-Annual Basis<br />
+                      <input
+                        aria-label="calculate button value 7"
+                        type="radio"
+                        name="compound_option"
+                        value="7"
+                      />
+                      Compound on an Annual Basis<br />
+                    </span>
+                  </td>
+                </tr>
+              </table>
+              <script language="JavaScript" src="enda.js"></script>
+            </center>
+          </form>
+        </td>
+      </tr>
+    </table>
+
+    <a
+      style="margin-left: 5rem"
+      href="https://www.platinumfcu.org/index.php"
+      >Site Map</a
+    >
+  </body>
+</html>

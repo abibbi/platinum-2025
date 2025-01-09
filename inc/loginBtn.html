@@ -1,0 +1,48 @@
+<button id="toggleBankingLogin" data-toggle="collapse" href="#bankingLogin" onclick="return false;" aria-expanded="false" aria-controls="bankingLogin" class="collapsed">
+    <span>Login</span>
+</button>
+<div id="bankingLogin" aria-labelledby="bankingLoginHeader" class="banking-login card-log collapse" style="">
+	<form name="login" action="https://platinumfcu.onlinecu.com" method="get">
+		<button type="button" class="close collapsed" data-toggle="collapse" href="#bankingLogin" aria-label="Close online banking login dropdown" aria-expanded="false">
+			<i aria-hidden="true">x</i>
+		</button>
+		<div id="bankingLoginHeader" class="card-log-header">
+			Home Banking Login
+		</div>
+		<fieldset class="card-log-body" data-action="https://platinumfcu.onlinecu.com" data-method="POST">
+			<legend class="sr-only">Online Banking</legend>
+			<div class="form-group">
+				<label for="UsernameField" class="sr-only">Username</label>
+			   <input name="user" type="text" class="setText" placeholder="User ID" onfocus="MM_setTextOfTextfield('login','','')" size="15" title="User ID" tabindex="2">
+			  </div>
+			  <button id="submitOnlineBanking" type="submit" class="submit btn btn-primary d-inline-block">Login</button>
+		</fieldset>
+		<div class="card-log-footer">
+			<div class="row d-flex">
+				<div class="col">
+
+					<a href="https://www.ezcard-loginfo.com/#/">
+						<span>Login to your Credit card-log</span>
+					</a>
+					<a href="https://www.businessbillpay-e.com/v2/login.aspx?instid=39424">
+						<span>Login to Business Bill Pay</span>
+					</a>
+					
+					<a href="https://memberfirstmortgagegeorgia.mortgagewebcenter.com/applynow" target="_blank" onkeypress="drawAlert()" onclick="drawAlert()">				<span>Mortgage Loan</span>
+					</a>
+				</div>
+				<div class="col">
+					<a href="https://platinumfcu.onlinecu.com/forgot-password/byVerification">
+						<span>Forgot/New Password</span>
+					</a>
+					<a href="https://platinumfcu.onlinecu.com/enroll">
+						<span>Register for Home Banking</span>
+					</a>
+					<a href="https://www.shareteccu.com/app/platinumfcu/viewapp?id=73" target="_blank">
+						<span>Apply Now</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</form>
+</div>
